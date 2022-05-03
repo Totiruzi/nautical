@@ -3,7 +3,7 @@
   <mat-form-field appearance="outline">
     <mat-label>Email</mat-label>
     <input matInput placeholder="Email" type="email" [formControl]="email" required>
-    <mat-icon class="mat-18">email</mat-icon>
+    <mat-icon matSuffix>email</mat-icon>
     <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
   </mat-form-field>
   <mat-form-field appearance="outline">
@@ -12,5 +12,5 @@
     <mat-icon matSuffix>lock</mat-icon>
     <mat-error *ngIf="password.invalid">{{getPasswordErrorMessage()}}</mat-error>
   </mat-form-field>
-  <button mat-raised-button color="primary" (click)="onSubmit()">{{submitLabel}}</button>\
+  <button mat-raised-button color="primary" (click)="onSubmit()">{{submitedLabel}}</button>
 </div>

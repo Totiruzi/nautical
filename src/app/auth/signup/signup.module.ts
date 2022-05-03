@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SignupComponent } from './signup.component';
+import { AuthModule } from '../auth.module';
 
 
 
@@ -9,7 +10,8 @@ import { SignupComponent } from './signup.component';
     SignupComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AuthModule
   ]
 })
 export class SignupModule { }
